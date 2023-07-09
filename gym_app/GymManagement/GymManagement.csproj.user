@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Charts\ContractsCountChart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewContractDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewCourseDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewFacilityDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewStaffDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewTypeOfCourseDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\AddNewTypeOfFacilityDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ContractDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ContractDetailDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ListOfContractsForBookingDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\SampleConfirmDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\SampleErrorDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\SampleMessageDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\SampleProgressDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ViewContractListOfCustomerDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BookingPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ContractPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CoursePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FacilityPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ForgetPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SearchBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StaffPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\WindowTaskBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Charts\ContractsCountChart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewContractDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewCourseDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewFacilityDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewStaffDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewTypeOfCourseDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\AddNewTypeOfFacilityDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ContractDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ContractDetailDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ListOfContractsForBookingDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\SampleConfirmDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\SampleErrorDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\SampleMessageDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\SampleProgressDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ViewContractListOfCustomerDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceXAML\MainResource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BookingPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ContractPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CoursePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FacilityPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ForgetPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearchBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StaffPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WindowTaskBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

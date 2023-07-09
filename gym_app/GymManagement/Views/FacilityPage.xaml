@@ -1,0 +1,198 @@
+﻿<UserControl x:Class="GymManagement.Views.FacilityPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:converters="clr-namespace:GymManagement.Converters"
+             xmlns:views="clr-namespace:GymManagement.Views"
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             mc:Ignorable="d" 
+             x:Name="FacilityUC"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter" />
+        <CollectionViewSource x:Key="ListType" Source="{Binding TypeList}" />
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <views:SearchBar></views:SearchBar>
+        </Grid>
+        <Button Margin="10" HorizontalAlignment="Left" Grid.Row="1"
+                            Background="{StaticResource PrimaryHueLightBrush}"
+                            Style="{DynamicResource MaterialDesignRaisedButton}"
+                            materialDesign:ElevationAssist.Elevation="Dp2"
+                            Command="{Binding AddFacilityTypeCommand,UpdateSourceTrigger=PropertyChanged}"
+                            >Thêm phân loại</Button>
+        <Border CornerRadius="0 0 15 0" Grid.Row="2" Background="White">
+
+
+            <DataGrid x:Name="GridFacility"
+                       BorderBrush="Transparent"
+                      Background="White"
+                      Style="{StaticResource DataGridStyle}"
+                      ItemsSource="{Binding FacilityContext}"
+                      SelectedItem="{Binding SelectedFacility, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <!--<DataGrid.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding GridChangeCommand}" CommandParameter="{Binding ElementName=GridContract}" />
+                </DataGrid.InputBindings>-->
+
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="RowEditEnding">
+                        <i:InvokeCommandAction Command="{Binding GridChangeCommand}"
+                                                   CommandParameter="{Binding ElementName=GridFacility}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+
+                <DataGrid.Columns>
+
+                    <DataGridTemplateColumn Header="ID" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock VerticalAlignment="Center"  Text="{Binding Path=FacilityId, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="TÊN" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <materialDesign:Chip Height="30"
+                                    Content="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}">
+                                    <materialDesign:Chip.Icon>
+                                        <Image />
+                                    </materialDesign:Chip.Icon>
+                                </materialDesign:Chip>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+
+                    <!--<DataGridComboBoxColumn 
+                        Header="LOẠI"
+                        ItemsSource="{Binding Source={StaticResource ListType}}"
+                        DisplayMemberPath="Type.Name" 
+                        SelectedValuePath="TypeId"
+                        SelectedValueBinding="{Binding TypeId, UpdateSourceTrigger=PropertyChanged}">
+                    </DataGridComboBoxColumn>-->
+
+
+                    <!--<materialDesign:DataGridComboBoxColumn 
+                                                 Header="LOẠI"
+                                                 IsEditable="True"
+                        DisplayMemberPath="Type.Name"
+                        
+                                                 ItemsSourceBinding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path=DataContext.FacilityContext}"
+                                                 SelectedValueBinding="{Binding SelectedType}">
+                    </materialDesign:DataGridComboBoxColumn>-->
+
+                    <DataGridTemplateColumn Header="LOẠI">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Type.Name, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <ComboBox materialDesign:HintAssist.Hint="LOẠI" 
+                                          ItemsSource="{Binding Source={StaticResource ListType}}" 
+                                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                                          DisplayMemberPath="Name"
+                                          SelectedItem="{Binding Type, UpdateSourceTrigger=PropertyChanged}"
+                                          SelectedValuePath="TypeId"
+                                          >
+                                </ComboBox>
+
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="SỐ LƯỢNG TRONG KHO">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Quantity, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="3"
+                                         Text="{Binding Path=Quantity, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="GIÁ MỖI THIẾT BỊ">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=PricePerUnit,StringFormat={}{0:#,# VND}, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="12"
+                                         Text="{Binding Path=PricePerUnit,StringFormat={}{0:#,# VND} ,UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="MÔ TẢ">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Description, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="3"
+                                         Text="{Binding Path=Description, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="THAO TÁC">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+
+                                    <Button Command="{Binding DataContext.DeleteDataCommand, ElementName=GridFacility}"
+                                        CommandParameter="{Binding ElementName=GridFacility}"
+                                        Width="30" Height="30" Margin="5"
+                                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                                        ToolTip="Xóa khách hàng">
+                                        <materialDesign:PackIcon Kind="Delete" Height="15" Width="15" />
+                                    </Button>
+                                </DockPanel>
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

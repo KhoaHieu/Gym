@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="GymManagement.Views.HomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xml:lang="vi"
+             xmlns:charts="clr-namespace:GymManagement.Charts"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+             xmlns:views="clr-namespace:GymManagement.Views"
+             mc:Ignorable="d" 
+             x:Name="HomeUC"
+             d:DesignHeight="450" d:DesignWidth="900">
+    <Grid>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+
+                <lvc:CartesianChart 
+                     Series="{Binding SeriesTotalRevenue}" Title="{Binding TitleTotalRevenue}" XAxes="{Binding XAxesTotalRevenue}" />
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid>
+                    <!--<charts:ContractsCountChart Grid.Row="1" DataContext="{StaticResource ContractChartVM}"></charts:ContractsCountChart>-->
+                    <lvc:CartesianChart Grid.Row="1"
+                                        
+                                        Name="TotalContractChart"
+                                        Title="{Binding TitleContract}"               
+                                        Series="{Binding SeriesContract, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                        XAxes="{Binding XAxesContract, ConverterCulture=vi, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+        
+                    </lvc:CartesianChart>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

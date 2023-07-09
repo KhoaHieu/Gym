@@ -1,0 +1,308 @@
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\GymManagement.exe
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\GymManagement.deps.json
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\GymManagement.runtimeconfig.json
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\GymManagement.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\GymManagement.pdb
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Firebase.Auth.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\HarfBuzzSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.SkiaSharpView.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.SkiaSharpView.WPF.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\MVVMEssentials.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.HarfBuzz.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.Views.WPF.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.AssemblyReference.cache
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewContractDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewCourseDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewFacilityDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewStaffDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetailDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ListOfContractsForBookingDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleConfirmDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleErrorDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleProgressDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\LoginWindow.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\BookingPage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\ContractPage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\CoursePage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\CustomerPage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\FacilityPage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\ForgetPassword.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\HomePage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\Login.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\SearchBar.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\StaffPage.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\WindowTaskBar.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\App.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement_MarkupCompile.cache
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement_MarkupCompile.lref
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\App.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewContractDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewCourseDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewFacilityDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewStaffDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetailDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ListOfContractsForBookingDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleConfirmDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleErrorDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleProgressDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\LoginWindow.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\ResourceXAML\MainResource.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\BookingPage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\ContractPage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\CoursePage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\CustomerPage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\FacilityPage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\ForgetPassword.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\HomePage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\Login.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\SearchBar.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\StaffPage.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Views\WindowTaskBar.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.g.resources
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.AssemblyInfoInputs.cache
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.AssemblyInfo.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.CoreCompileInputs.cache
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.CopyComplete
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\refint\GymManagement.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.pdb
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\GymManagement.genruntimeconfig.cache
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\ref\GymManagement.dll
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetail.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetail.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleMessageDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleMessageDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfCourseDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfCourseDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfFacilityDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfFacilityDialog.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Charts\ContractsCountChart.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Charts\ContractsCountChart.baml
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ViewContractListOfCustomerDialog.g.cs
+C:\Learning\GymManagementSystem\GymManagement\GymManagement\obj\Debug\net6.0-windows\Dialogs\ViewContractListOfCustomerDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\GymManagement.exe
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\GymManagement.deps.json
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\GymManagement.runtimeconfig.json
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\GymManagement.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\GymManagement.pdb
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Firebase.Auth.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\HarfBuzzSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Humanizer.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.SkiaSharpView.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\LiveChartsCore.SkiaSharpView.WPF.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\MVVMEssentials.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.HarfBuzz.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SkiaSharp.Views.WPF.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.AssemblyReference.cache
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Charts\ContractsCountChart.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewContractDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewCourseDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewFacilityDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewStaffDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfCourseDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfFacilityDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetail.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetailDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ListOfContractsForBookingDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleConfirmDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleErrorDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleMessageDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleProgressDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ViewContractListOfCustomerDialog.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\LoginWindow.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\BookingPage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\ContractPage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\CoursePage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\CustomerPage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\FacilityPage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\ForgetPassword.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\HomePage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\Login.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\SearchBar.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\StaffPage.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\WindowTaskBar.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\App.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement_MarkupCompile.cache
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement_MarkupCompile.lref
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\App.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Charts\ContractsCountChart.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewContractDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewCourseDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewFacilityDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewStaffDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfCourseDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\AddNewTypeOfFacilityDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetail.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ContractDetailDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ListOfContractsForBookingDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleConfirmDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleErrorDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleMessageDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\SampleProgressDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Dialogs\ViewContractListOfCustomerDialog.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\LoginWindow.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\ResourceXAML\MainResource.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\BookingPage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\ContractPage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\CoursePage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\CustomerPage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\FacilityPage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\ForgetPassword.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\HomePage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\Login.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\SearchBar.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\StaffPage.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\Views\WindowTaskBar.baml
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.g.resources
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.AssemblyInfoInputs.cache
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.AssemblyInfo.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.CoreCompileInputs.cache
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.csproj.CopyComplete
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\refint\GymManagement.dll
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.pdb
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\GymManagement.genruntimeconfig.cache
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net6.0-windows\ref\GymManagement.dll

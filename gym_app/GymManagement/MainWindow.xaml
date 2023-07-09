@@ -1,0 +1,170 @@
+﻿<Window x:Class="GymManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Menu="clr-namespace:GymManagement.ResourceXAML"
+        xmlns:local="clr-namespace:GymManagement"
+        xmlns:vms="clr-namespace:GymManagement.ViewModels"
+        xml:lang="vi"
+        xmlns:views="clr-namespace:GymManagement.Views"
+        xmlns:converters="clr-namespace:GymManagement.Converters"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" AllowsTransparency="True"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        x:Name="mainscreen"
+        Title="MainWindow" Height="768" Width="1440">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"></BooleanToVisibilityConverter>
+        <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter" />
+    </Window.Resources>
+    <materialDesign:DialogHost DialogTheme="Inherit"
+                               Identifier="RootDialog">
+        <Border Style="{DynamicResource BorderWindow}" Background="#fafafa" >
+            <Grid>
+
+                <!--Window Bar-->
+
+                <views:WindowTaskBar Height="50" VerticalAlignment="Top"></views:WindowTaskBar>
+                <ProgressBar  Visibility="{Binding IsLoading , Converter={StaticResource BooleanToVisibilityConverter}}" Foreground="{StaticResource PrimaryHueDarkBrush}"
+                       IsIndeterminate="True" />
+                <!--Main View-->
+
+                <Grid Visibility="{Binding IsLoading, Converter={StaticResource InverseBooleanToVisibilityConverter}}">
+                    
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="240"></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Menu Navigation-->
+
+                    <Border  Margin="8" BorderBrush="{StaticResource PrimaryHueLightForegroundBrush}" BorderThickness="1"
+                        CornerRadius="30" Grid.Column="0" Background="White">
+                        <StackPanel >
+                            <Image Source="/Images/logo_app.png" Width="150px" Margin="0,50,0,20"></Image>
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding HomeNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" IsChecked="true">
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="Home" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Trang chủ
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding CustomerNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="Account" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Khách hàng
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding StaffNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="CardAccountDetailsOutline" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Nhân viên
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding CourseNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="Gymnastics" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Gói tập
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding FacilityNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="Dumbbell" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Vật tư
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding ContractNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="FileDocumentEdit" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Hợp đồng
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+
+
+                            <Menu:Btn Style="{StaticResource BtnStyle}" Command="{Binding BookingNavigationCommand}" CommandParameter="{Binding ElementName=mainscreen}" >
+                                <Grid>
+                                    <materialDesign:PackIcon Kind="Pen" Style="{StaticResource IconMenu}"/>
+                                    <TextBlock
+                            Style="{StaticResource Text_Style}" >
+                            Đặt lịch
+                                    </TextBlock>
+                                </Grid>
+                            </Menu:Btn>
+
+
+                            <!--Tùy chọn ứng dụng-->
+
+                            <Grid  Margin="0 20 0 0">
+                                <TextBlock
+                            Style="{StaticResource Text_Style}" Focusable="False" >
+                            Tùy chọn
+                                </TextBlock>
+                                <materialDesign:PopupBox
+                                Foreground="{StaticResource PrimaryHueMidForegroundBrush}" Style="{DynamicResource MaterialDesignMultiFloatingActionPopupBox}" PlacementMode="BottomAndAlignCentres" ToolTipService.Placement="Right"
+                                ToolTip="PopupBox, Style MaterialDesignMultiFloatingActionPopupBox" Height="30" Width="150" Margin="30,0,0,0">
+                                    <StackPanel>
+                                        <DockPanel>
+                                            <Button ToolTip="Cài đặt ứng dụng"  Foreground="{StaticResource PrimaryHueMidForegroundBrush}" Command="{Binding NotSupportedCommand}">
+                                                Cài đặt
+                                            </Button>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <Button ToolTip="Liên hệ với chủ sở hữu"  Foreground="{StaticResource PrimaryHueMidForegroundBrush}" Command="{Binding NotSupportedCommand}">
+
+                                                Hỗ trợ
+                                            </Button>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <Button  ToolTip="Đăng xuất khỏi ứng dụng "   Foreground="{StaticResource PrimaryHueMidForegroundBrush}" Command="{Binding BacktoLoginCommand}" CommandParameter="{Binding ElementName=mainscreen}">
+                                                Đăng xuất
+                                            </Button>
+                                        </DockPanel>
+                                    </StackPanel>
+                                </materialDesign:PopupBox>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                    <!--Các màn hình chức năng-->
+
+                    <Border Grid.Column="1" CornerRadius="0 15 15 0" >
+                        <ContentControl x:Name="Pages" Margin="5"
+                            Content="{Binding CurrentViewModel}">
+                        </ContentControl>
+
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+    </materialDesign:DialogHost>
+</Window>

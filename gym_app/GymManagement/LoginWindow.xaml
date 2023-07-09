@@ -1,0 +1,39 @@
+﻿<Window x:Class="GymManagement.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymManagement"
+        mc:Ignorable="d"
+        xmlns:vms="clr-namespace:GymManagement.ViewModels"
+        xmlns:views="clr-namespace:GymManagement.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Title="LoginWindow" Height="720" Width="1280">
+    <materialDesign:DialogHost DialogTheme="Inherit"
+                               Identifier="LoginRootDialog">
+    <Border Style="{DynamicResource BorderWindow}" >
+        <Border.Background>
+            <ImageBrush ImageSource="Images\gym.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Border.Background>
+        <Grid>
+            <views:WindowTaskBar Height="50" VerticalAlignment="Top"></views:WindowTaskBar>
+            <materialDesign:Transitioner Name="UserControlView" SelectedIndex="0" AutoApplyTransitionOrigins="True">
+                <views:Login></views:Login>
+                <views:ForgetPassword></views:ForgetPassword>
+            </materialDesign:Transitioner>
+            
+        </Grid>
+
+    </Border>
+    </materialDesign:DialogHost>
+</Window>

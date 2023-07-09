@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="GymManagement.Views.ContractPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+             xmlns:views="clr-namespace:GymManagement.Views"
+             mc:Ignorable="d" 
+             Style="{StaticResource Page_Style}"
+             d:DesignHeight="690" d:DesignWidth="1142">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <views:SearchBar></views:SearchBar>
+        </Grid>
+        
+        <Border CornerRadius="15" Grid.Row="1" Background="White">
+
+
+            <DataGrid x:Name="GridContract"
+                          Height="520"
+                       BorderBrush="Transparent"
+                      Background="White"
+                      Style="{StaticResource DataGridStyle}"
+                      ItemsSource="{Binding ContractContext}"
+                      SelectedItem="{Binding SelectedContract, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <!--<DataGrid.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding GridChangeCommand}" CommandParameter="{Binding ElementName=GridContract}" />
+                </DataGrid.InputBindings>-->
+
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="RowEditEnding">
+                        <i:InvokeCommandAction Command="{Binding GridChangeCommand}"
+                                                   CommandParameter="{Binding ElementName=GridContract}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <DataGrid.Columns>
+
+                    <DataGridTemplateColumn Header="ID" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock VerticalAlignment="Center"  Text="{Binding Path=ContractId, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="KHÁCH HÀNG" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <materialDesign:Chip Height="30"
+                                    Content="{Binding Path=Customer.Name, UpdateSourceTrigger=PropertyChanged}">
+                                    <materialDesign:Chip.Icon>
+                                        <Image />
+                                    </materialDesign:Chip.Icon>
+                                </materialDesign:Chip>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <!--<DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="30"
+                                         Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>-->
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="GÓI TẬP" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock VerticalAlignment="Center"  Text="{Binding Path=Course.Name, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <!--<DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="12"
+                                         Text="{Binding Path=Course.Name, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>-->
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="NGÀY BẮT ĐẦU" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=CreateDate,StringFormat=D,ConverterCulture=vi, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <!--<DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <DatePicker VerticalAlignment="Center"
+                                            materialDesign:HintAssist.Hint="Pick Date"
+                                            SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>-->
+                    </DataGridTemplateColumn>
+
+
+                    <DataGridTemplateColumn Header="NGÀY KẾT THÚC" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=FinishDate, StringFormat=D,ConverterCulture=vi, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <!--<DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <DatePicker VerticalAlignment="Center"
+                                            materialDesign:HintAssist.Hint="Pick Date"
+                                            SelectedDate="{Binding Path=FinishDate, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>-->
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="SỐ BUỔI TẬP CÒN LẠI" IsReadOnly="True">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=DaysLeft, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <!--<DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="4"
+                                         Text="{Binding Path=DaysLeft, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>-->
+                    </DataGridTemplateColumn>
+
+
+
+
+                    <DataGridCheckBoxColumn Header="CÒN HẠN" IsReadOnly="True"
+                                            Binding="{Binding Active,UpdateSourceTrigger=PropertyChanged}"
+                                            ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+                                            EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}">
+                    </DataGridCheckBoxColumn>
+                    <DataGridTemplateColumn Header="IN HỢP ĐỒNG">
+
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Button Command="{Binding DataContext.ViewContractDetailCommand, ElementName=GridContract}"
+                                        CommandParameter="{Binding ElementName=GridContract}"
+                                        Width="30" Height="30" Margin="5"
+                                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                                        ToolTip="Xem thông tin thêm khách hàng">
+                                        <materialDesign:PackIcon Kind="ViewSequential"   Height="15" Width="15"/>
+                                    </Button>
+
+                                </DockPanel>
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

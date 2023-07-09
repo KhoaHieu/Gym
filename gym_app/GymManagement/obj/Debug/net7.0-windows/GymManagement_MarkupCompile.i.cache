@@ -1,0 +1,20 @@
+﻿GymManagement
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\obj\Debug\net7.0-windows\
+GymManagement
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+D:\Backup\Năm 3\Mauthietke\gym_app\GymManagement\App.xaml
+29100812583
+
+108500459664
+240-2077536388
+Charts\ContractsCountChart.xaml;Dialogs\AddNewContractDialog.xaml;Dialogs\AddNewCourseDialog.xaml;Dialogs\AddNewFacilityDialog.xaml;Dialogs\AddNewStaffDialog.xaml;Dialogs\AddNewTypeOfCourseDialog.xaml;Dialogs\AddNewTypeOfFacilityDialog.xaml;Dialogs\ContractDetail.xaml;Dialogs\ContractDetailDialog.xaml;Dialogs\ListOfContractsForBookingDialog.xaml;Dialogs\SampleConfirmDialog.xaml;Dialogs\SampleErrorDialog.xaml;Dialogs\SampleMessageDialog.xaml;Dialogs\SampleProgressDialog.xaml;Dialogs\ViewContractListOfCustomerDialog.xaml;LoginWindow.xaml;MainWindow.xaml;ResourceXAML\MainResource.xaml;Views\BookingPage.xaml;Views\ContractPage.xaml;Views\CoursePage.xaml;Views\CustomerPage.xaml;Views\FacilityPage.xaml;Views\ForgetPassword.xaml;Views\HomePage.xaml;Views\Login.xaml;Views\SearchBar.xaml;Views\StaffPage.xaml;Views\WindowTaskBar.xaml;
+
+False
+

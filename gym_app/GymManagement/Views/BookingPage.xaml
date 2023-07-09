@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="GymManagement.Views.BookingPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:converters="clr-namespace:GymManagement.Converters"
+             xmlns:views="clr-namespace:GymManagement.Views"
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+             mc:Ignorable="d" 
+             Style="{StaticResource Page_Style}"
+             d:DesignHeight="690" d:DesignWidth="1142">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <views:SearchBar></views:SearchBar>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <lvc:CartesianChart Margin="20" 
+                                Series="{Binding SeriesBooking}" 
+                                Title="{Binding TitleBookingInAWeek}" 
+                                XAxes="{Binding XAxesBooking}" />
+
+
+            
+            <Border CornerRadius="0 0 15 0" Grid.Row="1" Background="#fafafa">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"></ColumnDefinition>
+                        <ColumnDefinition Width="2"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1"
+                          Height="250"
+                          Background="Black">
+                        
+                    </Grid>
+                    <DataGrid x:Name="GridPT"
+                              Grid.Column="0"
+                              
+                              BorderBrush="Transparent"
+                              Background="White"
+                          Style="{StaticResource DataGridStyle}"
+                          ItemsSource="{Binding PtContext}"
+                          SelectedItem="{Binding SelectedStaff, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+                        
+
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="TÊN" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <materialDesign:Chip Height="30"
+                                    Content="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}">
+                                            <materialDesign:Chip.Icon>
+                                                <Image />
+                                            </materialDesign:Chip.Icon>
+                                        </materialDesign:Chip>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                
+                            </DataGridTemplateColumn>
+
+
+                            <DataGridTemplateColumn Header="THAO TÁC">
+
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DockPanel>
+                                            <Button Command="{Binding DataContext.CreateBookingCommand, ElementName=GridPT}"
+                                        CommandParameter="{Binding ElementName=GridPT}"
+                                        Width="30" Height="30" Margin="5"
+                                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                                        ToolTip="Đặt lịch tập">
+                                                <materialDesign:PackIcon Kind="Pen" Height="15" Width="15" />
+                                            </Button>
+                                        </DockPanel>
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Border CornerRadius="15 15 15 15" Background="#fafafa" Grid.Column="2">
+                        <DataGrid x:Name="GridBooking"
+                                      BorderBrush="Transparent"
+                                      Background="White"
+                                      VerticalScrollBarVisibility="Visible"
+                                      Style="{StaticResource DataGridStyle}"
+                                      ItemsSource="{Binding BookingContext}">
+
+                            <DataGrid.Columns>
+
+                                <DataGridTemplateColumn Header="ID HỢP ĐỒNG" IsReadOnly="True">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock VerticalAlignment="Center"  Text="{Binding Path=ContractId, UpdateSourceTrigger=PropertyChanged}">
+                                            </TextBlock>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                                <DataGridTemplateColumn Header="KHÁCH HÀNG" IsReadOnly="True">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <materialDesign:Chip Height="30"
+                                    Content="{Binding Path=Customer.Name, UpdateSourceTrigger=PropertyChanged}">
+                                                <materialDesign:Chip.Icon>
+                                                    <Image />
+                                                </materialDesign:Chip.Icon>
+                                            </materialDesign:Chip>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Header="HUẤN LUYỆN VIÊN" IsReadOnly="True">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <materialDesign:Chip Height="30"
+                                    Content="{Binding Path=Staff.Name, UpdateSourceTrigger=PropertyChanged}">
+                                                <materialDesign:Chip.Icon>
+                                                    <Image />
+                                                </materialDesign:Chip.Icon>
+                                            </materialDesign:Chip>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                                <DataGridTemplateColumn Header="SỐ BUỔI TẬP CÒN LẠI">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Contract.DaysLeft, UpdateSourceTrigger=PropertyChanged}">
+                                            </TextBlock>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                    <!--<StackPanel Grid.Column="2" >
+                        <TextBlock Style="{DynamicResource MaterialDesignCaptionTextBlock}"
+                                   TextAlignment="Center"
+                                   FontSize="20">
+                            <Bold>Danh sách các lần đặt lịch trong hôm nay</Bold>
+                        </TextBlock>
+
+                        
+                    </StackPanel>-->
+
+                </Grid>
+                
+                
+                
+                
+                
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

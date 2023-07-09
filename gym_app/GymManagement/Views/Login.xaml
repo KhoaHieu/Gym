@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="GymManagement.Views.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:validationrules="clr-namespace:GymManagement.ValidationRules"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             x:Name="LoginUC"
+             Background="Transparent"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="720" d:DesignWidth="1280">
+
+
+    
+    
+    <Border Style="{StaticResource BorderWindow}">
+        <Grid Margin="30" HorizontalAlignment="Center" Width="500" Height="600" Background="White">
+            <StackPanel  Height="550" Width="450" >
+                <Image Source="/Images/logo_app.png" Stretch="Uniform" HorizontalAlignment="Center" Margin="20,0,0,0" Height="100"></Image>
+                <TextBlock  FontSize="68"  HorizontalAlignment="Center"
+                                Style="{DynamicResource MaterialDesignTitleTextBlock}">
+                                <Bold>Đăng nhập</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Margin="0,0,0,30"  VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                            Style="{DynamicResource MaterialDesignSubheadingTextBlock}">
+                                Xin chào, đăng nhập để sử dụng ứng dụng nhé!
+                </TextBlock>
+                <StackPanel Background="White" OpacityMask="White">
+                    <TextBox  
+                        Margin="20"
+                        FontSize="20" 
+                        materialDesign:HintAssist.Hint="Email"
+                        Style="{DynamicResource MaterialDesignFloatingHintTextBox}">
+                        <TextBox.Text>
+                            <Binding Path="UserEmail" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <validationrules:EmailValidationRules></validationrules:EmailValidationRules>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <Grid>
+
+                        <PasswordBox  Margin="20"
+                            x:Name="txtPassword" PasswordChanged="txtPassword_PasswordChanged" Grid.Row="2" 
+                            FontSize="20" MaxLength="20"
+                            materialDesign:HintAssist.Hint="Mật khẩu"
+                            Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" >
+                        </PasswordBox>
+                        <!--<Button Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,10,20" VerticalAlignment="Bottom"
+                                Background="Transparent"  BorderBrush="Transparent"
+                                Command="{Binding PasswordVisibleCommand}"
+                                CommandParameter="{Binding ElementName=txtPassword}">
+                            <materialDesign:PackIcon Kind="Eye" Width="25" Height="25" Foreground="Black" />
+                        </Button>-->
+                    </Grid>
+                </StackPanel>
+
+                <DockPanel Height="50">
+
+                    <TextBlock  HorizontalAlignment="Right" 
+                       VerticalAlignment="Bottom">
+                <Button Background="Transparent" BorderBrush="Transparent" 
+                        Command="{x:Static materialDesign:Transitioner.MoveNextCommand}">
+                    <Label   FontSize="16">
+                        <Underline><Italic> Quên mật khẩu?</Italic> </Underline>
+                    </Label>
+                </Button>
+
+                    </TextBlock>
+                </DockPanel>
+
+                <Button  Background="{StaticResource PrimaryHueDarkBrush}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0"
+                         Style="{DynamicResource MaterialDesignRaisedButton}" Width="400" Height="45" BorderBrush="White"
+                         Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=LoginUC}"
+                         Foreground="{StaticResource PrimaryHueDarkForegroundBrush}"
+                         materialDesign:ElevationAssist.Elevation="Dp2" IsDefault="True">
+                    Đăng nhập
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+    <!--<Border Style="{DynamicResource BorderWindow}">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="\Images\gym.jpg" Stretch="UniformToFill"></ImageBrush>
+            </Grid.Background>
+
+            <materialDesign:Card Width="500" Height="600">
+            
+            </materialDesign:Card>
+
+        </Grid>
+    </Border>-->
+
+</UserControl>

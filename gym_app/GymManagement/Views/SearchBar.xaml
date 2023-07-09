@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="GymManagement.Views.SearchBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             x:Name="ucSearchBar"
+             DataContext="{StaticResource SearchBarVM}"
+             d:DesignHeight="120" d:DesignWidth="1142">
+    <Border CornerRadius="0 15 15 0" >
+        <Grid>
+            <materialDesign:ColorZone Background="Transparent" Padding="16">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <DockPanel Grid.Row="0">
+                        <StackPanel Orientation="Horizontal" materialDesign:RippleAssist.IsCentered="True">
+                            <materialDesign:ColorZone Mode="Standard"  Padding="8 4 8 4" CornerRadius="20" Panel.ZIndex="1" Margin="0 0 0 0"
+                                                          materialDesign:ShadowAssist.ShadowDepth="Depth1" Width="720" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Button
+                                    Style="{DynamicResource MaterialDesignToolButton}"
+                                    Command="{Binding SearchCommand}"
+                                    CommandParameter="{Binding ElementName=ucSearchBar}">
+                                        <materialDesign:PackIcon Kind="Magnify" Opacity=".56" />
+                                    </Button>
+                                    <TextBox x:Name="Search"
+                                    Grid.Column="1"
+                                    Margin="8 0 0 0"
+                                    materialDesign:HintAssist.Hint="Search..."
+                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderThickness="0"
+                                    MinWidth="200"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding SearchingContent, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                        <TextBox.InputBindings>
+                                            <KeyBinding Key="Enter" Command="{Binding SearchCommand, UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding ElementName=ucSearchBar}" />
+                                        </TextBox.InputBindings>
+                                    </TextBox>
+                                </Grid>
+                            </materialDesign:ColorZone>
+                        </StackPanel>
+                    </DockPanel>
+                    <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="0 10 0 0" Height="30">
+                        <Button  Background="{StaticResource PrimaryHueLightBrush}"  HorizontalAlignment="Left"
+                                 x:Name="testbtn"  Margin="15 0 0 0" 
+                                 Style="{DynamicResource MaterialDesignRaisedButton}" Width="100" Height="30" 
+                                 materialDesign:ElevationAssist.Elevation="Dp2"
+                                 Command="{Binding AddNewDataCommand,UpdateSourceTrigger=PropertyChanged}"
+                                 CommandParameter="{Binding ElementName=ucSearchBar}">
+                            <materialDesign:PackIcon Kind="Plus" />
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:ColorZone>
+        </Grid>
+    </Border>
+</UserControl>

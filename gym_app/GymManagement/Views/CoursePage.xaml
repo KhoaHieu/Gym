@@ -1,0 +1,292 @@
+﻿<UserControl x:Class="GymManagement.Views.CoursePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GymManagement.Views"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+             xmlns:views="clr-namespace:GymManagement.Views"
+             mc:Ignorable="d"  
+             Style="{StaticResource Page_Style}"
+             d:DesignHeight="690" d:DesignWidth="1142">
+
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="ListType" Source="{Binding TypeList}" />
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <views:SearchBar></views:SearchBar>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Margin="10" HorizontalAlignment="Left" Grid.Row="1"
+                            Background="{StaticResource PrimaryHueLightBrush}"
+                            Style="{DynamicResource MaterialDesignRaisedButton}"
+                            materialDesign:ElevationAssist.Elevation="Dp2"
+                            Command="{Binding AddCourseTypeCommand,UpdateSourceTrigger=PropertyChanged}"
+                            >Thêm phân loại</Button>
+                
+                <materialDesign:Card Margin="0 20" Background="White" HorizontalAlignment="Left" Grid.Column="0"
+                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                         Width="300" Padding="8" UniformCornerRadius="20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="TrophyAward" Height="50" Width="50"
+                                                         Foreground="{StaticResource PrimaryHueMidBrush}" />
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" TextAlignment="Left"
+                                            Style="{StaticResource MaterialDesignCaptionTextBlock}"><Bold>Gói tập được yêu thích nhất </Bold></TextBlock>
+                            <TextBlock Style="{StaticResource MaterialDesignCaptionTextBlock}"  Foreground="Black" TextAlignment="Center"
+                                           FontSize="18" FontWeight="Medium"
+                                           Text="{Binding Path=MostFavoriteCourse.Name, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                        </StackPanel>
+                        <!--<TextBlock Style="{StaticResource MaterialDesignCaptionTextBlock}"  Foreground="Black"
+                                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"   
+                                       Text="{Binding Path=MostFavoriteCourse.Contracts.Count, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0} hợp đồng}" FontWeight="Bold" TextAlignment="Center"></TextBlock>-->
+
+                        <lvc:PieChart Grid.Column="1"  Series="{Binding SeriesMostFavorite}" InitialRotation="-200"
+                                          Total="50">
+                        </lvc:PieChart>
+
+                    </Grid>
+                </materialDesign:Card>
+
+                <materialDesign:Card Margin="20 20 0 20" Background="White" Grid.Column="1" HorizontalAlignment="Center"
+                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                         Width="300" Padding="8" UniformCornerRadius="20">
+                    <Grid>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="TrophyAward" Height="50" Width="50"
+                                                         Foreground="{StaticResource PrimaryHueMidBrush}" />
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" TextAlignment="Left"
+                                            Style="{StaticResource MaterialDesignCaptionTextBlock}"><Bold>Gói tập giá trị nhất</Bold></TextBlock>
+                            <TextBlock Style="{StaticResource MaterialDesignCaptionTextBlock}"  Foreground="Black" TextAlignment="Center"
+                                           FontSize="18" FontWeight="Medium"
+                                           Text="{Binding Path=MostValueableCourse.Name, UpdateSourceTrigger=PropertyChanged }"></TextBlock>
+                        </StackPanel>
+
+                        <lvc:PieChart Grid.Column="1" Series="{Binding SeriesMostValueable}" InitialRotation="-200"
+                                          Total="20000000">
+                        </lvc:PieChart>
+                        <!--<TextBlock Style="{StaticResource MaterialDesignCaptionTextBlock}"  Foreground="Black"
+                                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"  
+                                       Text="{Binding Path=MostValueableCourse.Price, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:N}}" FontWeight="Bold" TextAlignment="Center"></TextBlock>-->
+                        <TextBlock Style="{StaticResource MaterialDesignCaptionTextBlock}"  Foreground="Gray" FontWeight="Bold" TextAlignment="Center"
+                                       Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 35 0 0" >VND</TextBlock>
+
+                    </Grid>
+                </materialDesign:Card>
+            </Grid>
+
+
+            
+
+            <Border CornerRadius="0 0 15 0" Grid.Row="1" Background="White">
+              
+                    
+                        
+                <DataGrid x:Name="GridCourse"
+                       BorderBrush="Transparent"
+                      Background="White"
+                      Style="{StaticResource DataGridStyle}"
+                      ItemsSource="{Binding CourseContext}"
+                      SelectedItem="{Binding SelectedCourse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <!--<DataGrid.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding GridChangeCommand}" CommandParameter="{Binding ElementName=GridContract}" />
+                </DataGrid.InputBindings>-->
+
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="RowEditEnding">
+                            <i:InvokeCommandAction Command="{Binding GridChangeCommand}"
+                                                   CommandParameter="{Binding ElementName=GridCourse}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+
+                    <DataGrid.Columns>
+
+                        <DataGridTemplateColumn Header="ID" IsReadOnly="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock VerticalAlignment="Center"  Text="{Binding Path=CourseId, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+
+                        <DataGridTemplateColumn Header="TÊN" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                                    
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="30"
+                                         Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}">
+                                </TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="LOẠI">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=TypeNavigation.Name, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <ComboBox materialDesign:HintAssist.Hint="LOẠI" 
+                                          ItemsSource="{Binding Source={StaticResource ListType}}" 
+                                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                                          DisplayMemberPath="Name"
+                                          SelectedItem="{Binding TypeNavigation, UpdateSourceTrigger=PropertyChanged}"
+                                          SelectedValuePath="Type"
+                                          >
+                                    </ComboBox>
+
+
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+
+
+                        <DataGridTemplateColumn Header="GIÁ">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock VerticalAlignment="Center"  Text="{Binding Price, StringFormat={}{0:#,# VND}, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="100"
+                                         Text="{Binding Path=Price,StringFormat={}{0:#,# VND}, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+
+
+
+                        <DataGridTemplateColumn Header="MÔ TẢ">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock VerticalAlignment="Center"  Text="{Binding Path=Description, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="100"
+                                         Text="{Binding Path=Description, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+
+
+                        <DataGridTemplateColumn Header="THỜI LƯỢNG">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=Duration, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="3"
+                                         Text="{Binding Path=Duration, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="LOẠI">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock  VerticalAlignment="Center" 
+                                            Text="{Binding Path=TypeNavigation.Name, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <TextBox VerticalAlignment="Center" Style="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                         MaxLength="3"
+                                         Text="{Binding Path=TypeNavigation.Name, UpdateSourceTrigger=PropertyChanged}">
+                                    </TextBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        
+                        
+                        <DataGridCheckBoxColumn Header="THỜI HẠN"
+                                            Binding="{Binding Active,UpdateSourceTrigger=PropertyChanged}"
+                                            ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+                                            EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}">
+                        </DataGridCheckBoxColumn>
+
+                        <DataGridTemplateColumn Header="THAO TÁC">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <DockPanel>
+
+                                        <Button Command="{Binding DataContext.DeleteDataCommand, ElementName=GridCourse}"
+                                        CommandParameter="{Binding ElementName=GridCourse}"
+                                        Width="30" Height="30" Margin="5"
+                                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                                        ToolTip="Xóa khách hàng">
+                                            <materialDesign:PackIcon Kind="Delete" Height="15" Width="15" />
+                                        </Button>
+                                    </DockPanel>
+
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+                    
+              
+            </Border>
+        </Grid>
+
+    </Grid>
+</UserControl>
